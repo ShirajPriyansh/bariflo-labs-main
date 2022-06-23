@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components";
 import "../../App.css";
 import Body from "../Body";
 import Cards from "../Cards";
@@ -8,7 +9,14 @@ import Navbar from "../Navbar";
 function Home() {
   return (
     <>
-    <Navbar first="HOME" second="OUR TEAM" third="CONTACT US" firstlink="/" secondlink = "/ourteam" thirdlink="/contactus"/>
+      <Navbar
+        first="HOME"
+        second="OUR TEAM"
+        third="CONTACT US"
+        firstlink="/"
+        secondlink="/ourteam"
+        thirdlink="/contactus"
+      />
       <Body />
       <div className="about_company section-spacing">
         <div className="about_overlay">
@@ -25,9 +33,7 @@ function Home() {
                   &amp; creation of wealth by leveraging developed technology
                   utilising surface water reserve.
                 </p>
-                <h3 className="mission">
-                  Mission is about people
-                </h3>
+                <h3 className="mission">Mission is about people</h3>
                 <p className="our_mission_para">
                   Develop sustainable technology and processes for aquaculture
                   farming by solving critical water issues and disease issues
@@ -47,8 +53,36 @@ function Home() {
         </div>
       </div>
       <Cards />
-      
-      <div className="callout-banner section-spacing">
+
+      <div className="callout-banner py-5">
+        <div className="container">
+          <div className="col">
+            <div className="row">
+              <p className="h2 text-light">Provide solutions for the realiable growth</p>
+            </div>
+            <div className="row">
+              <p className="text-light text-justify paragraph">
+                Bariflo Labs is an industry 4.0 compliant startup has developed
+                water body management system based on Fluid dynamics, IOT,
+                robotics, AI for aqua-farm management, urban water-body
+                management. We offer technological solution for
+                aquafarmers,co-operatives,villages,communities,cities &amp;
+                industries at a variety of scales.Due to detachment of society
+                on surface water bodies such as ponds, lakes, estuaries and
+                overexploitation of groundwater due to agricultural, industry
+                activities have created critical water stress on urban and rural
+                civilization. We, at Bariflo Labs, are solving the water quality
+                degradation of lakes, reservoirs by developing a profitable
+                socio-technological business model by implementing robotic
+                technology developed using the concept of environmental
+                hydraulics, Ai, IoT and upgrading traditional methods.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* <div className="callout-banner section-spacing">
         <div className="clearfix">
           <div className="title_div">
             <h3 className="title">
@@ -75,8 +109,7 @@ function Home() {
             </p>
           </div>
         </div>
-      </div>
-      
+      </div> */}
 
       <div className="three_icons_div">
         <div className="hand-holding-heart">
@@ -135,72 +168,83 @@ function Home() {
         </div>
       </div> */}
 
-      <div className="support_grid">
-        <div className="support_heading">
-          <h1>OUR SUPPORT SYSTEM</h1>
+      <div className="container">
+        <div className="col">
+          <div className="row">
+            <p className="h2 text-dark">Our Support System</p>
+          </div>
+          <div className="row">
+            <p>Our project are supported by startup Odhisha</p>
+          </div>
         </div>
-        <div className="support_paragraph">
-          <p>Our project are supported by startup odhisha</p>
-        </div>
-        <div className="support_grid_image">
-          <div className="support_images">
-            <img
-              src="https://bariflo.teceads.co.in/images/dbt-birac-logo-image2-300x148.png"
-              alt="birac-logo"
-            ></img>
+        <div className="row align-items-center">
+          <div className="col">
+            <img src="/images/thub.svg" alt="thub-logo"></img>
           </div>
-          <div className="support_images">
-            <img
-              src="https://bariflo.teceads.co.in/images/dlabs_Logo.png"
-              alt="dlabs-logo"
-            ></img>
+          <div className="col">
+            <img src="/images/nit.svg" alt="nit-logo"></img>
           </div>
-          <div className="support_images">
-            <img
-              src="https://bariflo.teceads.co.in/images/iifsa.png"
-              alt="iifsa-logo"
-            ></img>
+          <div className="col">
+            <img src="/images/ciba.svg" alt="ciba-logo"></img>
           </div>
-          <div className="support_images">
-            <img
-              src="https://bariflo.teceads.co.in/images/MEITY-150x150.jpg"
-              alt="meity-logo"
-            ></img>
+          <div className="col">
+            <img src="/images/book.svg" alt="book-logo"></img>
           </div>
-          <div className="support_images">
-            <img
-              src="https://bariflo.teceads.co.in/images/t-hub.jpg"
-              alt="t-hub-logo"
-            ></img>
-          </div>
-          <div className="support_images">
-            <img
-              src="https://bariflo.teceads.co.in/images/Screenshot-2020-06-17-at-9.14.53-PM-150x150.png"
-              alt="ss-logo"
-            ></img>
-          </div>
-          <div className="support_images">
-            <img
-              src="https://bariflo.teceads.co.in/images/startuplogo-300x176.png"
-              alt="startup-logo"
-            ></img>
-          </div>
-          <div className="support_images">
-            <img
-              src="https://bariflo.teceads.co.in/images/Logo-271x300.png"
-              alt="logo-logo"
-            ></img>
-          </div>
-          <div className="support_images">
-            <img
-              src="https://bariflo.teceads.co.in/images/LogoKIITTBI-1-150x150.png"
-              alt="kiitbi-logo"
-            ></img>
+          <div className="row align-items-center">
+            <div className="col">
+              <img src="/images/dlabs.svg" alt="dlabs-logo"></img>
+            </div>
+            <div className="col">
+              <img src="/images/six.svg" alt="six-logo"></img>
+            </div>
+            <div className="col">
+              <img src="/images/vit.svg" alt="vit-logo"></img>
+            </div>
           </div>
         </div>
       </div>
+
+      {/* <div className="container">
+        <div className="support_grid">
+          <div className="support_heading">
+            <h1>OUR SUPPORT SYSTEM</h1>
+          </div>
+          <div className="support_paragraph">
+            <p>Our project are supported by startup Odhisha</p>
+          </div>
+          <Patents>
+            <div className="support_images">
+              <img src="/images/thub.svg" alt="thub-logo"></img>
+            </div>
+            <div className="support_images">
+              <img src="/images/nit.svg" alt="nit-logo"></img>
+            </div>
+            <div className="support_images">
+              <img src="/images/book.svg" alt="book-logo"></img>
+            </div>
+            <div className="support_images">
+              <img src="/images/dlabs.svg" alt="meity-logo"></img>
+            </div>
+            <div className="support_images">
+              <img src="/images/six.svg" alt="t-hub-logo"></img>
+            </div>
+            <div className="support_images">
+              <img src="/images/ciba.svg" alt="ciba-logo"></img>
+            </div>
+            <div className="support_images">
+              <img src="/images/vit.svg" alt="vit-logo"></img>
+            </div>
+          </Patents>
+        </div>
+      </div> */}
     </>
   );
 }
 
 export default Home;
+
+// const Patents = styled.div`
+//   display: flex;
+//   overflow-x: hidden;
+//   align-items: center;
+// `;

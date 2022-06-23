@@ -4,7 +4,8 @@
 }
 .cards {
     padding: 2rem;
-    background: #fff;
+    /* background: #fff; */
+    background-color: #2B2C2E;
   }
   
   h1 {
@@ -114,7 +115,8 @@
   }
   
   .cards__item__text {
-    color: #252e48;
+    /* color: #252e48; */
+    color: #fff;
     font-size: 18px;
     line-height: 24px;
   }
