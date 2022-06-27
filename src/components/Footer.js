@@ -7,120 +7,156 @@ function Footer() {
   return (
     <FooterBackColor>
       <div className="footer-container">
-        <section className="footer-subscription">
-        <p className='footer-subscription-heading'>
-        Mission is about people, not projects
-        </p>
-          <p className="footer-subscription-text">
-            STAY TUNED FOR LATEST PRODUCT
+        <section className="footer-subscription pb-3">
+          <p className="footer-subscription-heading">
+            Mission is about people, not projects
           </p>
-          <div className="input-areas">
+          <p className="footer-subscription-text">
+            Stay Tuned for latest products
+          </p>
+          <div className="input-areas row">
+            <div className="col">
+
             <form>
               <input
                 className="footer-input"
                 name="email"
                 type="email"
                 placeholder="Your Email"
-              />
+                />
               <Button buttonStyle="btn--primary">Subscribe</Button>
             </form>
+                </div>
           </div>
         </section>
-        <div className="footer-links">
-          <div className="footer-link-wrapper">
-            <div className="footer-link-items">
-              <h2>About Us</h2>
-              <Link to="/sign-up">How it works</Link>
-              {/* <Link to='/'>Testimonials</Link> */}
-              <Link to="/">Careers</Link>
-              <Link to="/">Investors</Link>
-              <Link to="/">Terms of Service</Link>
+
+        {/* -------------------- */}
+
+        <div className="container">
+          <div className="row py-5">
+            <div className="col">
+              <div className="col">
+                <Link to="/" className="social-logo">
+                  <img
+                    src={require("./images/footer-logo.svg").default}
+                    alt="bariflo-logo"
+                  />
+                  <span>BarifloLabs</span>
+                  {/* <i className='fab fa-typo3' /> */}
+                </Link>
+              </div>
             </div>
-            <div className="footer-link-items">
-              <h2>Contact Us</h2>
-              <Link to="/">Contact</Link>
-              <Link to="/">Support</Link>
-              <Link to="/">Destinations</Link>
-              <Link to="/">Sponsorships</Link>
+            <div className="col">
+              <p className="h5 text-light ">About Us</p>
+              <div className="row footer-link">
+                <li>
+                  <Link to="/">How it works</Link>
+                </li>
+                <li>
+                  <Link to="/">Careers</Link>
+                </li>
+                <li>
+                  <Link to="/">Investors</Link>
+                </li>
+                <li>
+                  <Link to="/">Terms of Service</Link>
+                </li>
+              </div>
             </div>
-          </div>
-          <div className="footer-link-wrapper">
-            <div className="footer-link-items">
-              <h2>Videos</h2>
-              <Link to="/">Submit Video</Link>
-              <Link to="/">Ambassadors</Link>
-              <Link to="/">Agency</Link>
-              <Link to="/">Influencer</Link>
+            <div className="col">
+              <p className="h5 text-light">Contact Us</p>
+              <div className="row footer-link">
+                <li>
+                  <Link to="/">Contact</Link>
+                </li>
+                <li>
+                  <Link to="/">Support</Link>
+                </li>
+                <li>
+                  <Link to="/">Destinations</Link>
+                </li>
+                <li>
+                  <Link to="/">Sponsorships</Link>
+                </li>
+              </div>
             </div>
-            <div className="footer-link-items">
-              <h2>Social Media</h2>
-              <Link to="/">Instagram</Link>
-              <Link to="/">Facebook</Link>
-              <Link to="/">Youtube</Link>
-              <Link to="/">Twitter</Link>
+            <div className="col">
+              <p className="h5 text-light">Videos</p>
+              <div className="row footer-link">
+                <li>
+                  <Link to="/">Submit Video</Link>
+                </li>
+                <li>
+                  <Link to="/">Ambassadors</Link>
+                </li>
+                <li>
+                  <Link to="/">Agency</Link>
+                </li>
+                <li>
+                  <Link to="/">Influencer</Link>
+                </li>
+              </div>
+            </div>
+            <div className="col">
+              <p className="h5 text-light">Social Media</p>
+              <div className="row">
+                <div className="col footer-link">
+                  <div className="d-flex gap-3 icons">
+                    <li>
+                      <Link
+                        className="social-icon-link Instagram"
+                        to="/"
+                        target="_blank"
+                        aria-label="Instagram"
+                      >
+                        <i className="fab fa-facebook-f" />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="social-icon-link Instagram"
+                        to="/"
+                        target="_blank"
+                        aria-label="LinkedIn"
+                      >
+                        <i className="fab fa-instagram" />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="social-icon-link twitter"
+                        to="/"
+                        target="_blank"
+                        aria-label="Youtube"
+                      >
+                        <i className="fab fa-youtube" />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="social-icon-link twitter"
+                        to="/"
+                        target="_blank"
+                        aria-label="Twitter"
+                      >
+                        <i className="fab fa-twitter fa-twitter-t" />
+                      </Link>
+                    </li>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <section className="social-media">
-          <div className="social-media-wrap">
-            <div className="footer-logo">
-              <Link to="/" className="social-logo">
-                <img
-                  src={require("./images/logo1.png").default}
-                  className="bariflolab-logo"
-                  alt="bariflo-logo"
-                ></img>
-                <span>bariflo labs</span>
-                {/* <i className='fab fa-typo3' /> */}
-              </Link>
-            </div>
-            <small className="website-rights">
-              ©Copyright © 2021 Bariflolabs
-            </small>
-            <div className="social-icons">
-              <Link
-                className="social-icon-link facebook"
-                to="/"
-                target="_blank"
-                aria-label="Facebook"
-              >
-                <i className="fab fa-facebook-f" />
-              </Link>
-              <Link
-                className="social-icon-link instagram"
-                to="/"
-                target="_blank"
-                aria-label="Instagram"
-              >
-                <i className="fab fa-instagram" />
-              </Link>
-              <Link
-                className="social-icon-link youtube"
-                to="/"
-                target="_blank"
-                aria-label="Youtube"
-              >
-                <i className="fab fa-youtube" />
-              </Link>
-              <Link
-                className="social-icon-link twitter"
-                to="/"
-                target="_blank"
-                aria-label="Twitter"
-              >
-                <i className="fab fa-twitter fa-twitter-t" />
-              </Link>
-              <Link
-                className="social-icon-link twitter"
-                to="/"
-                target="_blank"
-                aria-label="LinkedIn"
-              >
-                <i className="fab fa-linkedin" />
-              </Link>
-            </div>
+
+        <div className="container-fluid py-4 bg-dark">
+          <div className="d-flex justify-content-center ">
+            <p className="text-light">©Copyright © 2021 Bariflolabs</p>
           </div>
-        </section>
+        </div>
+        {/* 
+  --------------------
+*/}
       </div>
     </FooterBackColor>
   );
@@ -129,7 +165,5 @@ function Footer() {
 export default Footer;
 
 const FooterBackColor = styled.div`
-
-background-color: #474545;
-
-`
+  background-color: #303133;
+`;

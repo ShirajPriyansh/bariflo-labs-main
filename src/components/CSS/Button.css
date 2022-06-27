@@ -1,5 +1,6 @@
 :root{
     --primary : #646464;
+
 }
 
 .btn{
@@ -8,6 +9,7 @@
     outline: none;
     border: none;
     cursor: pointer;
+    background-color: red;
 }
 
 .btn--primary{
