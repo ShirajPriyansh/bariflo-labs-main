@@ -14,13 +14,19 @@
   
   .cards_upper_part{
     /* background: #f3f3f3; */
-    background: #022e5f;
-    background: #187abd;
+    /* background: #022e5f; */
+    /* background: #187abd; */
+    background: #FAFAFA;;
     padding: 20px 0px;
+    border: 1px solid red;
   }
 
   .cards_upper_part > h1{
-    color: #fff;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 58px;    
+    color: #101213;
   }
   /* .cards__container { */
     /* display: flex;
@@ -120,16 +126,43 @@
     font-size: 18px;
     line-height: 24px;
   }
+  .parent, .image1 {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .image1,.image2{
+    width: 200px;
+    border-radius: 8px;
+  }
+  /* .image1 {
+    position: relative;
+    top: 0;
+    left: 0;
+  } */
+  .image2 {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
 
   .long__paragraph{
-      margin: 20px;
+      /* margin: 20px; */
       /* color: #646464; */
-      color: #fff;
+      /* color: #fff;
       font-size: 0.7rem;
-      text-align: center;
+      /* text-align: center; */
       line-height: 25px;
       font-weight: 100;
-      font-family: Gotham-light;
+      font-family: Gotham-light; 
+      font-family: 'Jost';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 40px;
+      text-align: justify;
+      color: rgba(16, 18, 19, 0.6);
+
   }
   @media (min-width: 1600px) {
     .long__paragraph{

@@ -168,7 +168,7 @@ function Home() {
         </div>
       </div> */}
 
-      <div className="container">
+      <div className="container py-5">
         <div className="col">
           <div className="row">
             <p className="h2 text-dark">Our Support System</p>
@@ -179,26 +179,26 @@ function Home() {
         </div>
         <div className="row align-items-center">
           <div className="col">
-            <img src="/images/thub.svg" alt="thub-logo"></img>
+            <img src="/assets/thub.svg" alt="thub-logo"></img>
           </div>
           <div className="col">
-            <img src="/images/nit.svg" alt="nit-logo"></img>
+            <img src="/assets/nit.svg" alt="nit-logo"></img>
           </div>
           <div className="col">
-            <img src="/images/ciba.svg" alt="ciba-logo"></img>
+            <img src="/assets/ciba.svg" alt="ciba-logo"></img>
           </div>
           <div className="col">
-            <img src="/images/book.svg" alt="book-logo"></img>
+            <img src="/assets/book.svg" alt="book-logo"></img>
           </div>
           <div className="row align-items-center">
             <div className="col">
-              <img src="/images/dlabs.svg" alt="dlabs-logo"></img>
+              <img src="/assets/dlabs.svg" alt="dlabs-logo"></img>
             </div>
             <div className="col">
-              <img src="/images/six.svg" alt="six-logo"></img>
+              <img src="/assets/six.svg" alt="six-logo"></img>
             </div>
             <div className="col">
-              <img src="/images/vit.svg" alt="vit-logo"></img>
+              <img src="/assets/vit.svg" alt="vit-logo"></img>
             </div>
           </div>
         </div>
