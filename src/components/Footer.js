@@ -16,17 +16,16 @@ function Footer() {
           </p>
           <div className="input-areas row">
             <div className="col">
-
-            <form>
-              <input
-                className="footer-input"
-                name="email"
-                type="email"
-                placeholder="Your Email"
-                />
-              <Button buttonStyle="btn--primary">Subscribe</Button>
-            </form>
-                </div>
+              <form>
+                <input
+                  className="footer-input"
+                  name="email"
+                  type="email"
+                  placeholder="Your Email"
+                  />
+                <Button buttonStyle="btn--primary">Subscribe</Button>
+              </form>
+            </div>
           </div>
         </section>
 

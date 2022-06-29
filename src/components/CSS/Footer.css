@@ -170,11 +170,11 @@ color: #fff;
     box-sizing: border-box;
     justify-content: center;
   }
-  button{
+  /* button{
     background-color: #fff !important;
     margin: 0 !important;
     padding: 8px 20px !important;
-  }
+  } */
 
   .social-logo > span{
     /* color: #0675ba; */

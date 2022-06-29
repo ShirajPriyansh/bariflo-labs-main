@@ -32,23 +32,21 @@ function ContactUs() {
     <>
      <Navbar first="HOME" second="OUR TEAM" third="CONTACT US" firstlink="/" secondlink = "/ourteam" thirdlink="/contactus"/>
       <div className="get_a_demo_container">
-        <div className="get_a_demo_heading">
-          <h1>GET A DEMO</h1>
-        </div>
-        <div className="get_a_demo_container_paragraph">
-          <p className="get_a_demo_paragraph">
-            Bariflo Labs wants to grow with the aqua farmers. We want to share
-            our knowledge and resources by piloting our patented technologies:
-            Lotus (Aeration), hyacinth (feeder),Alga (monitoring) &Vibro (
-            recycling) in the farm ponds. We look forward to support you and
-            your venture by deploying these devices to eliminate your problems
-            for enhancing your productivity.
-          </p>
-        </div>
+        <div className="container">
+        {/* <div className="get_a_demo_heading"> */}
+          <div className="col col-10">
+            <div className="col">
+            <p className="display-5 text-light">Get a Demo</p>
+          </div>
+            <div className="col">
+              <p className="h5 text-light"> Bariflo Labs wants to grow with the aqua farmers. We want to share our knowledge and resources by piloting our patented technologies: Lotus (Aeration), hyacinth (feeder),Alga (monitoring) &Vibro ( recycling) in the farm ponds. We look forward to support you and your venture by deploying these devices to eliminate your problems for enhancing your productivity.</p>
+            </div>
+          </div>
+      {/* </div> */}
       </div>
-      <hr></hr>
+    </div>
 
-      <section className="contact-section">
+      <section className="contact-section py-3">
         <div className="container">
           <ToastContainer position="top-center" />
           <div className="row justify-content-center">
@@ -66,11 +64,11 @@ function ContactUs() {
                         <div className="row">
                           <div className="col-md-12">
                             <div className="form-group">
+                              <label htmlFor="name">Name</label>
                               <input
                                 type="text"
                                 className="form-control"
                                 name="name"
-                                placeholder="Name"
                                 //   onChange={handleInputChange}
                                 //   value={name}
                               />
@@ -78,11 +76,11 @@ function ContactUs() {
                           </div>
                           <div className="col-md-12">
                             <div className="form-group">
+                            <label htmlFor="email">Eamil</label>
                               <input
                                 type="email"
                                 className="form-control"
                                 name="email"
-                                placeholder="Email"
                                 //   onChange={handleInputChange}
                                 //   value={email}
                               />
@@ -90,11 +88,11 @@ function ContactUs() {
                           </div>
                           <div className="col-md-12">
                             <div className="form-group">
+                            <label htmlFor="subject">Subject</label>
                               <input
                                 type="text"
                                 className="form-control"
                                 name="subject"
-                                placeholder="Subject"
                                 //   onChange={handleInputChange}
                                 //   value={subject}
                               />
@@ -102,13 +100,13 @@ function ContactUs() {
                           </div>
                           <div className="col-md-12">
                             <div className="form-group">
+                            <label htmlFor="message">Message</label>
                               <textarea
                                 type="text"
                                 className="form-control"
                                 name="message"
-                                placeholder="Message"
                                 cols="30"
-                                rows="6"
+                                rows="4"
                                 //   onChange={handleInputChange}
                                 //   value={message}
                               ></textarea>
@@ -116,11 +114,10 @@ function ContactUs() {
                           </div>
                           <div className="col-md-12">
                             <div className="form-group">
-                              <input
+                              <button
                                 type="submit"
                                 value="Send Message"
-                                className="btn btn-primary"
-                              />
+                                className="btn">Send Message</button>
                             </div>
                           </div>
                         </div>
@@ -183,6 +180,7 @@ function ContactUs() {
                             </a>
                           </p>
                         </div>
+                    </div>
                       </div>
                     </div>
                   </div>
@@ -190,7 +188,6 @@ function ContactUs() {
               </div>
             </div>
           </div>
-        </div>
       </section>
     </>
   );
