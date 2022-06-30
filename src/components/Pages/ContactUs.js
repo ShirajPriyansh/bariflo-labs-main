@@ -3,6 +3,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "../CSS/ContactUs.css";
 import Navbar from "../Navbar";
+// import Map from "./Map";
 
 function ContactUs() {
   //   const [state, setState] = useState({
@@ -126,26 +127,33 @@ function ContactUs() {
                   </div>
                   <div className="col-md-6 d-flex align-items-stretch">
                     <div className="info-wrap w-100 p-lg-5 p-4 img">
-                      <h3>LETS CONNECT</h3>
-                      <p className="mb-4">
+                    <div className="map-responsive">
+                    <iframe title="location" src="https://www.google.co.in/maps/place/Bariflo+Labs/@12.9639933,79.1254774,13z/data=!3m1!4b1!4m5!3m4!1s0x3bad479eaaaaaaab:0x7594a2ce5b283f29!8m2!3d12.9639956!4d79.1604971?hl=en-GB" width="600" height="450" frameborder="0" aria-hidden="false" tabindex="0">
+                    </iframe>
+                    </div>
+
+
+                      <p className="h3">Let's Connect</p>
+                      {/* <p className="mb-4">
                         For more details please fill out the form below & we
                         will get back to you shortly!
-                      </p>
+                      </p> */}
                       <div className="dbox w-100 d-flex align-items-start">
-                        <div className="icon d-flex align-items-center justify-content-center">
+                        {/* <div className="icon d-flex align-items-center justify-content-center">
                           <span className="fa fa-map-marker"></span>
-                        </div>
+                        </div> */}
                         <div className="text pl-3">
                           <p>
-                            <span>Address:</span> VIT TBI, Vellore Campus,
+                             <span>Address:</span> 
+                              VIT TBI, Vellore Campus,
                             Tiruvalam Rd, Katpadi, Vellore, Tamil Nadu 632014
                           </p>
                         </div>
                       </div>
                       <div className="dbox w-100 d-flex align-items-center">
-                        <div className="icon d-flex align-items-center justify-content-center">
+                        {/* <div className="icon d-flex align-items-center justify-content-center">
                           <span className="fa fa-phone"></span>
-                        </div>
+                        </div> */}
                         <div className="text pl-3">
                           <p>
                             <span>Phone:</span>
@@ -154,28 +162,26 @@ function ContactUs() {
                         </div>
                       </div>
                       <div className="dbox w-100 d-flex align-items-center">
-                        <div className="icon d-flex align-items-center justify-content-center">
+                        {/* <div className="icon d-flex align-items-center justify-content-center">
                           <span className="fa fa-paper-plane"></span>
-                        </div>
+                        </div> */}
                         <div className="text pl-3">
                           <p>
                             <span>Email:</span>
                             <a href="mailto:info@yoursite.com">
-                              {" "}
                               care@bariflolabs.com, bariflolabs@gmail.com
                             </a>
                           </p>
                         </div>
                       </div>
                       <div className="dbox w-100 d-flex align-items-center">
-                        <div className="icon d-flex align-items-center justify-content-center">
+                        {/* <div className="icon d-flex align-items-center justify-content-center">
                           <span className="fa fa-globe"></span>
-                        </div>
+                        </div> */}
                         <div className="text pl-3">
                           <p>
                             <span>Website:</span>
                             <a href="https://bariflo.teceads.co.in">
-                              {" "}
                               bariflo.teceads.co.in
                             </a>
                           </p>

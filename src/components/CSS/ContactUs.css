@@ -185,6 +185,7 @@
 
 input:focus, textarea:focus, select:focus {
   outline: none;
+
 }
 
 .wrapper {
@@ -251,7 +252,7 @@ h3 {
 
 .form-control:focus, .form-control:active {
   background: transparent;
-  border-color: rgba(255, 255, 255, 0.5) !important;
+  /* border-color: rgba(255, 255, 255, 0.5) !important; */
 }
 
 textarea.form-control {
@@ -305,6 +306,24 @@ textarea.form-control {
   background: #d62196;
   content: "";
   font-family: 'Gotham-light';
+}
+
+label{
+  padding: 10px 0;
+}
+
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
 }
 
 .info-wrap .dbox {
