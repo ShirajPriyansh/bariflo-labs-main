@@ -1,24 +1,25 @@
-import React from 'react'
-import "./CSS/ProductWebPage.css"
+import React from "react";
+import "./CSS/ProductWebPage.css";
 
 function ProductWebPage(props) {
-    return (
-        <>
-            <div className="product_container">
-                <div className="product_heading">
-                    <h1>{props.heading}</h1>
-                </div>
-                <div className="product_second_container">
-                    {/* <div className="product_image_container">
-                        <img src={props.image} alt="water_body"/>
-                    </div> */}
-                    <div className="product_description">
-                        <p>{props.description}</p>
-                    </div>
-                </div>
-            </div>
-        </>
-    )
+  return (
+    <>
+        <div
+          className="product_heading"
+          style={{backgroundImage: `url(${props.backgroundImage})`}} >
+
+          <div className="container">
+            <p className="display-2 my-5 text-light text-start d-flex flex-column justify-content-center">{props.heading}</p>
+          </div>
+
+        </div>
+        <div className="product-description">
+          <div className="container py-5 text-start">
+              <p className="h5">{props.description}</p>
+          </div>
+        </div>
+    </>
+  );
 }
 
-export default ProductWebPage
+export default ProductWebPage;
