@@ -13,10 +13,8 @@ function ProductWebPage(props) {
           </div>
 
         </div>
-        <div className="product-description">
           <div className="container py-5 text-start">
               <p className="h5">{props.description}</p>
-          </div>
         </div>
     </>
   );

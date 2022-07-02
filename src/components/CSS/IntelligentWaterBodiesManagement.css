@@ -1,6 +1,7 @@
 .Rejuvenation_of_water_bodies, .Restoration_of_water_bodies{
     display: flex;
     height: 40vh;
+    border: 1px solid red;
 }
 
 .Rejuvenation-left-box, .Restoration-left-box{
