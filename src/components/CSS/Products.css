@@ -79,13 +79,12 @@ background: #161623;
  }  */
 
 .container {
-  position: relative;
+  /* position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* max-width: 90vw; */
   flex-wrap: wrap;
-  z-index: 1;
+  z-index: 1; */
 }
 
 .container .card {

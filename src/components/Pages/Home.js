@@ -111,7 +111,7 @@ function Home() {
         </div>
       </div> */}
 
-      <div className="three_icons_div">
+      {/* <div className="three_icons_div">
         <div className="hand-holding-heart">
           <i
             aria-hidden="true"
@@ -129,7 +129,7 @@ function Home() {
           <i aria-hidden="true" className="fas fa-recycle fa-3x"></i>
           <h3>Recycling</h3>
         </div>
-      </div>
+      </div> */}
 
       {/* <div className="about_company section-spacing">
         <div className="about_overlay">

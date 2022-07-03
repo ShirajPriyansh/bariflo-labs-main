@@ -1,17 +1,57 @@
 .Rejuvenation_of_water_bodies, .Restoration_of_water_bodies{
-    display: flex;
-    height: 40vh;
-    border: 1px solid red;
+    /* display: flex;
+    height: 40vh; */
+    /* border: 1px solid red; */
 }
 
+.water-bodies-headings{
+    font-family: Jost;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.water-bodies-text{
+    font-family: 'Jost';
+    color: #fff;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 35px;
+}
+th{
+    background: #187ABD !important;
+}
+tr:nth-child(odd){
+    background-color:#93D3FF !important;
+}
+tr:nth-child(even){
+ background: #A9DCFF !important;
+}
+
+
+/* .player-wrapper {
+    position: relative;
+    padding-top: 56.25%;
+}
+  
+.react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+
+
 .Rejuvenation-left-box, .Restoration-left-box{
-    width: 40vw;
-    padding: 25px;
-    background: #0675ba;
+    /* width: 40vw;
+    padding: 25px; */
+    background: #0D507E;
     /* height: 100%; */
     /* justify-content: center; */
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
 }
 
 .Rejuvenation-left-box > h1, .Restoration-left-box > h1{
@@ -23,7 +63,7 @@
 .Rejuvenation-right-box, .Restoration-right-box{
     width: 60vw;
     padding: 25px;
-    background: #0675ba;
+    background: #0D507E;
     /* height: 100%; */
     /* justify-content: center; */
     display: flex;
@@ -41,7 +81,8 @@
 .Ecosystem-before-industrial-revolution-heading > h1{
     margin: 10px 0px;
     padding : 50px 0px;
-    background: #0675ba;
+    background:#0D507E;
+
     color: #fff;
     font-weight: bolder;
 }
