@@ -1,11 +1,11 @@
 import React from "react";
 import CardItem from "./CardItem";
 import "./CSS/Cards.css";
-
 function Cards() {
   return (
     <>
-    <div class="container py-5">
+
+    <div class="container Stroy">
       <div class="col col-4">
         <div class="col">
           <div className="parent">
@@ -27,8 +27,6 @@ function Cards() {
           <button class="btn btn-info btn-lg">Read More</button>
         </div>
       </div>
-
-
      {/* <div className="cards_upper_part">
         <h1>Our Story</h1>
         <p className="long__paragraph">
@@ -77,3 +75,4 @@ function Cards() {
 }
 
 export default Cards;
+

@@ -7,6 +7,11 @@
     /* background: #fff; */
     background-color: #2B2C2E;
   }
+  .Stroy{
+    display: flex;
+    padding: 20px 0;
+    align-items: center;
+  }
   
   h1 {
     text-align: center;

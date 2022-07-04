@@ -10,7 +10,7 @@ function Products() {
     <>
     {/* <Navbar first="HOME" second="OUR TEAM" third="CONTACT US"/> */}
     <Navbar first="HOME" second="OUR TEAM" third="CONTACT US" firstlink="/" secondlink = "/ourteam" thirdlink="/contactus"/>
-      <div className="products"></div>
+    {/* <div className="products"></div> */}
       {/* <body> */}
       <div className="body">
         <div className="body_container">

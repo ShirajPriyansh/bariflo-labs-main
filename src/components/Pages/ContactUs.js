@@ -114,7 +114,7 @@ function ContactUs() {
                             </div>
                           </div>
                           <div className="col-md-12">
-                            <div className="form-group">
+                            <div className="form-group mt-3">
                               <button
                                 type="submit"
                                 value="Send Message"

@@ -8,7 +8,12 @@
   flex-direction: column;
   border: 1px solid red;
   }
-        
+
+  /* .aquaBodiesPara{
+    padding: 20px 0;
+    text-align: justify;
+  }
+         */
 .product_heading {
   text-align: center;
   background-repeat: no-repeat;

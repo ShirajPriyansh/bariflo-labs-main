@@ -23,7 +23,7 @@ function Footer() {
                   type="email"
                   placeholder="Your Email"
                   />
-                <Button buttonStyle="btn--primary">Subscribe</Button>
+                <Button buttonStyle="btn btn--primary">Subscribe</Button>
               </form>
             </div>
           </div>
