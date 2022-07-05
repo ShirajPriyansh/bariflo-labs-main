@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { BrowserRouter, Outlet, Route, Router, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Outlet, Route, Router, Routes } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/Footer";
 // import Navbar from './components/Navbar';
@@ -14,7 +14,7 @@ import IntelligentBioflocAquaFarming from "./components/Pages/IntelligentBiofloc
 import ScrollToTop from "./components/ScrollToTop";
 import IntelligentWaterbodiesManagementProducts from "./components/Pages/IntelligentWaterbodiesManagementProducts";
 import IntelligentAquaBodiesManagementProducts from "./components/Pages/IntelligentAquaBodiesManagementProducts";
-import Blog from "./components/Pages/Blog";
+// import Blog from "./components/Pages/Blog";
 
 function App() {
   return (
@@ -34,10 +34,9 @@ function App() {
             />
             <Route
               path="IntelligentAquaBodiesManagement"
-              element={<IntelligentAquaBodiesManagement />}
-            >
-              <Route path="blog" element={<Blog />} />
-            </Route>
+              element={<IntelligentAquaBodiesManagement />} />
+              {/* <Route path="blog" element={<Blog />} /> */}
+            {/* </Route> */}
             <Route
               path="IntelligentAquaVerticalFarming"
               element={<IntelligentAquaVerticalFarming />}

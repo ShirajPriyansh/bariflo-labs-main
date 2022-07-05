@@ -1,6 +1,6 @@
 import React from "react";
 import "../CSS/OurTeam.css";
-import NameTags from "../NameTags";
+// import NameTags from "../NameTags";
 import Navbar from "../Navbar";
 import OurTeamCard from "../OurTeamCard";
 import { OurTeamCardDetails } from "../OurTeamCardDetails";
@@ -28,7 +28,7 @@ function OurTeam() {
 
       <div className="our_team_body">
         <section>
-          <div className="select_name_div">
+          {/* <div className="select_name_div">
           {
           OurTeamCardDetails.map((slide, index)=>{
               var href = "#"+ slide.id;
@@ -37,8 +37,7 @@ function OurTeam() {
                 )
             })
           }
-
-          </div>
+          </div> */}
           <div className="our_team_container">
             {
             OurTeamCardDetails.map((slide, index) => {

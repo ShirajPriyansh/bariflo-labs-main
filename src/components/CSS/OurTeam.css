@@ -78,7 +78,7 @@ a{
 }
 
 .our_team_container {
-  position: relative;
+  /* position: relative;
   z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -91,7 +91,13 @@ a{
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 40px 0;
+  /* margin: 40px 0; */
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  align-items: stretch;
+  margin-bottom: 16px;
 }
 
 .our_team_container .our_team_card {
