@@ -88,7 +88,7 @@
   }
   
   .cards__item__pic-wrap::after {
-    content: attr(data-category);
+    /* content: attr(data-category); */
     position: absolute;
     bottom: 0;
     margin-left: 10px;
@@ -122,7 +122,10 @@
   }
   
   .cards__item__info {
-    padding: 20px 30px 30px;
+    /* padding: 20px 30px 30px; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
   
   .cards__item__text {

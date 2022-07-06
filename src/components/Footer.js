@@ -1,8 +1,10 @@
 import React from "react";
 import "./CSS/Footer.css";
-import { Button } from "./Button";
+// import { Button } from "./Button";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import Button from "@material-ui/core/Button";
+
 function Footer() {
   return (
     <FooterBackColor>
@@ -22,8 +24,11 @@ function Footer() {
                   name="email"
                   type="email"
                   placeholder="Your Email"
-                  />
-                <Button buttonStyle="btn btn--primary">Subscribe</Button>
+                />
+                <Button variant="contained" color="primary" size="large">
+                  Subscribe
+                </Button>
+                {/* <Button buttonStyle="btn btn--primary">Subscribe</Button> */}
               </form>
             </div>
           </div>

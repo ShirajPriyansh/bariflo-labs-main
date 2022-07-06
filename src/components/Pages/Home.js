@@ -22,32 +22,37 @@ function Home() {
         <div className="about_overlay">
           <div className="about_container">
             <div className="about_row">
-              <div className="about_text">
-                <div className="about_theme_title_one">
-                  <h2>OUR VISION</h2>
-                  <hr />
+              <div className="container">
+                <div className="py-3">
+                <div className="about_text">
+                  <div className="about_theme_title_one">
+                    <h2>Our Vision</h2>
+                    <hr />
+                  </div>
+                  <p className="our_vision_para">
+                    Aspire to be market leader in water body management in the
+                    direction of aquafarming by Focusing on employment generation
+                    &amp; creation of wealth by leveraging developed technology
+                    utilising surface water reserve.
+                  </p>
+                  <div className="col">
+                    <h3 className="col">Mission is about people</h3>
+                    <p className="col">
+                      Develop sustainable technology and processes for aquaculture
+                      farming by solving critical water issues and disease issues
+                      which will benifit traditional to institutional farming.
+                    </p>
+                  </div>
                 </div>
-                <p className="our_vision_para">
-                  Aspire to be market leader in water body management in the
-                  direction of aquafarming by Focusing on employment generation
-                  &amp; creation of wealth by leveraging developed technology
-                  utilising surface water reserve.
-                </p>
-                <h3 className="mission">Mission is about people</h3>
-                <p className="our_mission_para">
-                  Develop sustainable technology and processes for aquaculture
-                  farming by solving critical water issues and disease issues
-                  which will benifit traditional to institutional farming.
-                </p>
-              </div>
               <div className="about_video">
                 <iframe
-                  width="420"
-                  height="315"
+                  width="100%"
                   src="https://www.youtube.com/embed/9Z3kDQ0OCCo"
                   title="video"
                 ></iframe>
               </div>
+              </div>
+             </div>
             </div>
           </div>
         </div>

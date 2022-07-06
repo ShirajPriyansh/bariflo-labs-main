@@ -10,7 +10,7 @@ function OurTeam() {
   return (
     <>
     {/* <Navbar first="HOME" second="OUR TEAM" third="CONTACT US"/> */}
-    <Navbar first="HOME" second="OUR TEAM" third="CONTACT US" firstlink="/home" secondlink = "/ourteam" thirdlink="/contactus"/>
+    <Navbar first="HOME" second="OUR TEAM" third="CONTACT US" firstlink="/" secondlink = "/ourteam" thirdlink="/contactus"/>
       <div className="banner_for_our_team my-3">
         <div className="container">
           <div className="col col-10">

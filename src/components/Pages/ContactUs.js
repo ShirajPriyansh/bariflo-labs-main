@@ -1,3 +1,4 @@
+import { Button } from "@material-ui/core";
 import React from "react";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -115,10 +116,11 @@ function ContactUs() {
                           </div>
                           <div className="col-md-12">
                             <div className="form-group mt-3">
-                              <button
+                              {/* <button
                                 type="submit"
                                 value="Send Message"
-                                className="btn">Send Message</button>
+                                className="btn">Send Message</button> */}
+                                <Button variant="contained" size="large" color="primary">Send Message</Button>
                             </div>
                           </div>
                         </div>
