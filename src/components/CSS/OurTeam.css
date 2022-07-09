@@ -29,7 +29,6 @@
       -ms-flex-align: center;
           align-items: center;
 }
-
 a{
   font-family: 'Gotham-light';
 }
@@ -66,15 +65,14 @@ a{
 }
 
 .our_team_body {
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  background: #fbfbfb;
+      flex-wrap: wrap; */
 }
 
 .our_team_container {

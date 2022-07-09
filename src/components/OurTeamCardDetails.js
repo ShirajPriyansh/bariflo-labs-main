@@ -90,9 +90,18 @@ export const OurTeamCardDetails = [
     {
         name: "Mohit Mittal",
         desc : "Product Development Engineer",
-        image: require("./images/mohitMital.jpeg").default,
+        image: require("./images/mohit-mittal.jpg").default,
         para : "Mohit Mittal, works as a Product development Engineer. His job is to develop and test the devices with standard techniques. His Educational Qualifications are M.Sc.(Tech.) Engineering Physics - Instrumentation from NIT Warangal and B.Sc. Computer Science from Kurukshetra University Kurukshetra.",
         id: "Mohit",
+        href: "https://linkedin.com/in/mohit-mittal-793866172"
+    },
+
+    {
+        name: "Jitu Behera",
+        desc : "Mentor and R&D",
+        image: require("./images/jittu.jpeg").default,
+        para : "Jittu, works as a Mechanical. His job is to develop and test the devices with standard techniques.",
+        id: "Jitu Behera",
         href: "https://linkedin.com/in/mohit-mittal-793866172"
     },
     {
@@ -103,14 +112,14 @@ export const OurTeamCardDetails = [
         id: "Vijay",
         href: "https://www.linkedin.com/in/mvkpro"
     },
-    {
-        name: "Anand R Pillai",
-        desc : "Mechanical fabrication Intern",
-        image: require("./images/anandRPillai.jpeg").default,
-        para : "He is an intern for the Mechanical Fabrication Engineer post. He is being taught about the different aspects of product development and testing. He is also being exposed to the world of 3D printing and machinery. He has Completed B.Tech in Mechanical Engg from Crescent University, Chennai.",
-        id: "Anand",
-        href: "www.linkedin.com/in/anand-r-pillai-1b5b23134"
-    },
+    // {
+    //     name: "Anand R Pillai",
+    //     desc : "Mechanical fabrication Intern",
+    //     image: require("./images/anandRPillai.jpeg").default,
+    //     para : "He is an intern for the Mechanical Fabrication Engineer post. He is being taught about the different aspects of product development and testing. He is also being exposed to the world of 3D printing and machinery. He has Completed B.Tech in Mechanical Engg from Crescent University, Chennai.",
+    //     id: "Anand",
+    //     href: "www.linkedin.com/in/anand-r-pillai-1b5b23134"
+    // },
     {
         name: "E.Bala Murugan",
         desc : "Embedded system Engineer",

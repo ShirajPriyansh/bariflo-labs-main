@@ -1,28 +1,125 @@
 import React, { useState } from "react";
 import ReactCardFlip from "react-card-flip";
 
+import { styled } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
-import CardActions from "@material-ui/core/CardActions";
-import CardContent from "@material-ui/core/CardContent";
+import CardHeader from "@material-ui/core/CardHeader";
 import CardMedia from "@material-ui/core/CardMedia";
-import Button from "@material-ui/core/Button";
+import CardContent from "@material-ui/core/CardContent";
+import CardActions from "@material-ui/core/CardActions";
+import Collapse from "@material-ui/core/Collapse";
+import Avatar from "@material-ui/core/Avatar";
+import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
-import { LinkedIn } from "@material-ui/icons";
-import { Container, Grid } from "@material-ui/core";
+import { red } from "@material-ui/core/colors";
+import FavoriteIcon from "@material-ui/icons/Favorite";
+import ShareIcon from "@material-ui/icons/Share";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import MoreVertIcon from "@material-ui/icons/MoreVert";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import { Link } from "@material-ui/core";
+import Grid from "@material-ui/core/Grid";
+
+// const ExpandMore = styled((props) => {
+// const { expand, ...other } = props;
+//   return <IconButton {...other} />;
+//     })(({ theme, expand }) => ({
+//     transform: !expand ? 'rotate(0deg)' : 'rotate(180deg)',
+//     marginLeft: 'auto',
+//     transition: theme.transitions.create('transform', {
+//       duration: theme.transitions.duration.shortest,
+//   }),
+// }));
+
+
 
 function OurTeamCard(props) {
+  const { name, desc, image, para, id, href, index } = props;
   // const [isFlipped, setIsFlipped] = useState(false);
 
   // const handleClick = () => {
   //   setIsFlipped(!isFlipped);
+
+  // const [expanded, setExpanded] = useState(false);
+
+  // const handleExpandClick = () => {
+  //   setExpanded(!expanded);
+  // }
   return (
     <>
+    <Grid container direction="row" spacing={4} alignItems="center" columns={{ xs: 4, sm: 8, md: 12 }}>
+      <Grid item xs={12} sm={6} md={4}>
+      <Card sx={{ maxWidth: 345 }}>
+        <CardMedia
+          component="img"
+          width="100%"
+          height="500px"
+          image={props.image}
+          alt="Paella dish"
+        />
+        <CardContent>
+        <Typography variant="h5" color="text.secondary">
+          {props.name}
+          </Typography>
+
+          <Typography variant="subtitle1" color="text.secondary">
+          {props.desc}
+          </Typography>
+        </CardContent>
+        
+        {/* <CardActions disableSpacing> */}      
+          <CardContent>
+            <Typography paragraph>{props.id}</Typography>
+            <Typography paragraph>
+              {props.para}
+            </Typography>
+          </CardContent>
+
+          <Link href={props.href} target="_blank">
+          <IconButton aria-label="connect to linkdein">
+            <LinkedInIcon color="primary" href={props.href} />
+          </IconButton>
+        </Link>
+      </Card>
+    </Grid>
+    </Grid>
+
+      {/* <Card>
+        <CardMedia style={{ height: "150px" }} image={image} />
+        <CardContent>
+          <Typography variant="body2" component="p">
+            {name}
+          </Typography>
+          <Typography variant="body2" component="p">
+            {id}
+          </Typography>
+          <Typography variant="body2" component="p">
+            {desc}
+          </Typography>
+          <Typography variant="body2" component="p">
+            {name}
+          </Typography>
+          <Typography variant="body2" component="p">
+            {index}
+          </Typography>
+          <Typography variant="body2" component="p">
+            {para}
+          </Typography>
+          <Typography variant="body2" component="p">
+            {href}
+          </Typography>
+        </CardContent>
+        <CardActions>
+          <Button size="small">BUY NOW</Button>
+        </CardActions>
+      </Card> */}
+
       {/* <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal"> */}
       {/* front card */}
 
       {/* Bootstrap card */}
-      <div className="card" id={props.id} style={{ width: "18rem" }}>
-          <img src={props.image} className="card-img-top" alt="photo" />
+      {/* <div className="card" id={props.id}>
+          <img src={props.image} className="card-img-top card__img" alt="photo" />
           <div className="card-body">
             <h5 className="card-title">{props.name}</h5>
             <h5 className="card-title">{props.desc}</h5>
@@ -38,9 +135,7 @@ function OurTeamCard(props) {
               />
             </a>
           </div>
-        </div>
-
-    
+        </div> */}
 
       {/* <div classNameName="our_team_card" id={props.id}>
           <div classNameName="our_team_content">

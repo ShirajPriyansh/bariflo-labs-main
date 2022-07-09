@@ -1,3 +1,4 @@
+import { Grid } from "@material-ui/core";
 import React from "react";
 import "../CSS/OurTeam.css";
 // import NameTags from "../NameTags";
@@ -6,6 +7,8 @@ import OurTeamCard from "../OurTeamCard";
 import { OurTeamCardDetails } from "../OurTeamCardDetails";
 
 function OurTeam() {
+
+ 
   
   return (
     <>
@@ -27,7 +30,7 @@ function OurTeam() {
       </div>
 
       <div className="our_team_body">
-        <section>
+        {/* <section> */}
           {/* <div className="select_name_div">
           {
           OurTeamCardDetails.map((slide, index)=>{
@@ -38,9 +41,14 @@ function OurTeam() {
             })
           }
           </div> */}
-          <div className="our_team_container">
+          {/* <div className="our_team_container"> */}
+          {/* <Grid container spacing={2}>
+            <Grid item xs={12} sm={4}>
+              <OurTeamCard {...OurTeamCard} />
+            </Grid>
+          </Grid> */}
             {
-            OurTeamCardDetails.map((slide, index) => {
+              OurTeamCardDetails.map((slide, index) => {
               return (
                 <OurTeamCard
                   image={slide.image}
@@ -50,11 +58,11 @@ function OurTeam() {
                   key={index}
                   id={slide.id}
                   href={slide.href}
-                />
-              );
-            })}
-          </div>
-        </section>
+                  />
+                  );
+                })}
+          {/* </div> */}
+        {/* </section> */}
       </div>
     </>
   );

@@ -3,7 +3,7 @@ import BlogWebPage from "../BlogWebPage";
 import Footer from "../Footer";
 import Navbar from "../Navbar";
 import { BlogCardDetails } from "./BlogCardDetails";
-
+import BlogCard from './BlogCard';
 function Blog() {
   return (
     <>
@@ -15,13 +15,21 @@ function Blog() {
         secondlink="/IntelligentWaterbodiesManagementBlog"
         thirdlink="/IntelligentWaterbodiesManagementDemo"
       />
-      <main>
-        <p>This is Blog</p>
         <div className="container">
-          {/* <BlogWebPage image={image} date={date} title={title} text={text} alt={alt} /> */}
-        </div>
-      </main>
-      <Footer />
+        <p>This is Blog</p>
+        {BlogCardDetails.map((slide, index) => {
+              return (
+                <BlogCard
+                  heading={slide.heading}
+                  para={slide.para}
+                  image={slide.image}
+                  title={slide.title}
+                  key={index}
+                />
+              );
+            })}
+          </div>
+          {/* </body> */}
     </>
   );
 }
