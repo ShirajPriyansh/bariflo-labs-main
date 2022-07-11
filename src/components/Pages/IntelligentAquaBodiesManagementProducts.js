@@ -1,10 +1,10 @@
-import React from 'react'
+import React from "react";
 import "../CSS/IntelligentWaterBodiesManagementProducts.css";
 import IntelligentWaterBodiesManagementCards from "../IntelligentWaterBodiesManagementCards";
 import Navbar from "../Navbar";
 function IntelligentAquaBodiesManagementProducts() {
-    return (
-        <>
+  return (
+    <>
       <Navbar
         first="HOME"
         second="OUR TEAM"
@@ -14,20 +14,37 @@ function IntelligentAquaBodiesManagementProducts() {
         thirdlink="/contactus"
       />
       <div className="Intelligent-water-bodies-management-card-container">
-        <IntelligentWaterBodiesManagementCards
-          heading="Aeration System"
-          image = {require("../images/aerationSystem.png").default}
-          information="Information"
-          firstpoint="Ensure > 4ppm DO at sediment"
-          secondpoint="Impact area of > 100mt2"
-          thirdpoint="Increase in primary and natural production by 50%"
-          fourthpoint="Suitable for rejuvenation and aquafarming"
-          fifthpoint="Captures carbon and water credits"
-          sixthpoint="Remote operation and monitoring"
-        />
-        <IntelligentWaterBodiesManagementCards
+        {/* <div className="heading">
+        <div className="header-contain">
+          <div className="container">
+            <p className="display-4 text-light">
+              Intelligent Water Bodies Management Products
+            </p>
+          </div>
+        </div> */}
+
+        <div className="header-contain">
+          <div class="container">
+            <p class="display-2 my-5 text-light text-start d-flex flex-column justify-content-center">
+              Intelligent Water Bodies Management Products
+            </p>
+          </div>
+        </div>
+      </div>
+      <IntelligentWaterBodiesManagementCards
+        heading="Aeration System"
+        image={require("../images/aerationSystem.png").default}
+        information="Information"
+        firstpoint="Ensure > 4ppm DO at sediment"
+        secondpoint="Impact area of > 100mt2"
+        thirdpoint="Increase in primary and natural production by 50%"
+        fourthpoint="Suitable for rejuvenation and aquafarming"
+        fifthpoint="Captures carbon and water credits"
+        sixthpoint="Remote operation and monitoring"
+      />
+      <IntelligentWaterBodiesManagementCards
         heading="Monitoring System"
-        image = {require("../images/monitoringSystem.png").default}
+        image={require("../images/monitoringSystem.png").default}
         information="Information"
         firstpoint="Monitoring the water column and sediment respiration rate"
         secondpoint="AI model for prediction of growth of species of interest"
@@ -35,10 +52,10 @@ function IntelligentAquaBodiesManagementProducts() {
         fourthpoint="Calculates carbon and water credits"
         fifthpoint="Solar based auto-maneuverable device"
         sixthpoint="toxic gases"
-         />
-        <IntelligentWaterBodiesManagementCards
+      />
+      <IntelligentWaterBodiesManagementCards
         heading="Nutrient Control System"
-        image = {require("../images/nutrientControlSystem.png").default}
+        image={require("../images/nutrientControlSystem.png").default}
         information="Information"
         firstpoint="Cleaning the surface weed, algae"
         secondpoint="Fumigation of lake for mosquito repellant"
@@ -46,10 +63,10 @@ function IntelligentAquaBodiesManagementProducts() {
         fourthpoint="Remote operation and monitoring"
         fifthpoint="Battery operated auto-maneuverable device"
         sixthpoint="Helps in carbon sequestration"
-        />
-        <IntelligentWaterBodiesManagementCards
+      />
+      <IntelligentWaterBodiesManagementCards
         heading="AI- IoT Data analytics"
-        image = {require("../images/ai-iotdataanalytics.png").default}
+        image={require("../images/ai-iotdataanalytics.png").default}
         information="Information"
         firstpoint="Display the water parameters"
         secondpoint="Display the weather information"
@@ -57,10 +74,9 @@ function IntelligentAquaBodiesManagementProducts() {
         fourthpoint="Control of devices remotely"
         fifthpoint=""
         sixthpoint=""
-        />
-      </div>
+      />
     </>
-    )
+  );
 }
 
-export default IntelligentAquaBodiesManagementProducts
+export default IntelligentAquaBodiesManagementProducts;

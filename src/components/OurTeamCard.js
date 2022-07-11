@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ReactCardFlip from "react-card-flip";
 
-import { styled } from "@material-ui/core/styles";
+import { makeStyles, styled } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardHeader from "@material-ui/core/CardHeader";
 import CardMedia from "@material-ui/core/CardMedia";
@@ -32,7 +32,6 @@ import Grid from "@material-ui/core/Grid";
 // }));
 
 
-
 function OurTeamCard(props) {
   const { name, desc, image, para, id, href, index } = props;
   // const [isFlipped, setIsFlipped] = useState(false);
@@ -47,8 +46,9 @@ function OurTeamCard(props) {
   // }
   return (
     <>
-    <Grid container direction="row" spacing={4} alignItems="center" columns={{ xs: 4, sm: 8, md: 12 }}>
-      <Grid item xs={12} sm={6} md={4}>
+
+    <Grid container direction="row" spacing={4} alignItems="center" row={{ xs: 12, sm: 6, md: 4 }}>
+      <Grid container item  spacing={2} xs={12} sm={6} md={4}>
       <Card sx={{ maxWidth: 345 }}>
         <CardMedia
           component="img"

@@ -7,6 +7,48 @@ import "../CSS/Home.css";
 import Navbar from "../Navbar";
 
 function Home() {
+  // const suppoetImages = [
+  //   {
+  //     id: 1,
+  //     src: "/assets/thub.svg",
+  //     alt: "thub-logo",
+  //   },
+  //   {
+  //     id: 2,
+  //     src: "/assets/nit.svg",
+  //     alt: "nit-logo",
+  //   },
+  //   {
+  //     id: 3,
+  //     src: "/assets/ciba.svg",
+  //     alt: "ciba-logo",
+  //   },
+  //   {
+  //     id: 4,
+  //     src: "/assets/book.svg",
+  //     alt: "book-logo",
+  //   },
+  //   {
+  //     id: 5,
+  //     src: "/assets/dlabs.svg",
+  //     alt: "dlabs-logo",
+  //   },
+  //   {
+  //     id: 6,
+  //     src: "/assets/six.svg",
+  //     alt: "six-logo",
+  //   },
+  //   {
+  //     id: 7,
+  //     src: "/assets/thub.svg",
+  //     alt: "thub-logo",
+  //   },
+  //   {
+  //     id: 8,
+  //     src: "/assets/vit.svg",
+  //     alt: "vit-logo",
+  //   },
+  // ];
   return (
     <>
       <Navbar
@@ -24,35 +66,36 @@ function Home() {
             <div className="about_row">
               <div className="container">
                 <div className="py-3">
-                <div className="about_text">
-                  <div className="about_theme_title_one">
-                    <h2>Our Vision</h2>
-                    <hr />
-                  </div>
-                  <p className="our_vision_para">
-                    Aspire to be market leader in water body management in the
-                    direction of aquafarming by Focusing on employment generation
-                    &amp; creation of wealth by leveraging developed technology
-                    utilising surface water reserve.
-                  </p>
-                  <div className="col">
-                    <h3 className="col">Mission is about people</h3>
-                    <p className="col">
-                      Develop sustainable technology and processes for aquaculture
-                      farming by solving critical water issues and disease issues
-                      which will benifit traditional to institutional farming.
+                  <div className="about_text">
+                    <div className="about_theme_title_one">
+                      <h2>Our Vision</h2>
+                      <hr />
+                    </div>
+                    <p className="our_vision_para">
+                      Aspire to be market leader in water body management in the
+                      direction of aquafarming by Focusing on employment
+                      generation &amp; creation of wealth by leveraging
+                      developed technology utilising surface water reserve.
                     </p>
+                    <div className="col">
+                      <h3 className="col">Mission is about people</h3>
+                      <p className="col">
+                        Develop sustainable technology and processes for
+                        aquaculture farming by solving critical water issues and
+                        disease issues which will benifit traditional to
+                        institutional farming.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="about_video">
+                    <iframe
+                      width="100%"
+                      src="https://www.youtube.com/embed/9Z3kDQ0OCCo"
+                      title="video"
+                    ></iframe>
                   </div>
                 </div>
-              <div className="about_video">
-                <iframe
-                  width="100%"
-                  src="https://www.youtube.com/embed/9Z3kDQ0OCCo"
-                  title="video"
-                ></iframe>
               </div>
-              </div>
-             </div>
             </div>
           </div>
         </div>
@@ -63,7 +106,9 @@ function Home() {
         <div className="container">
           <div className="col">
             <div className="row">
-              <p className="h2 text-light">Provide solutions for the realiable growth</p>
+              <p className="h2 text-light">
+                Provide solutions for the realiable growth
+              </p>
             </div>
             <div className="row">
               <p className="text-light text-justify paragraph">
@@ -182,31 +227,38 @@ function Home() {
             <p>Our project are supported by startup Odhisha</p>
           </div>
         </div>
-        <div className="row align-items-center">
-          <div className="col">
-            <img src="/assets/thub.svg" alt="thub-logo"></img>
-          </div>
-          <div className="col">
-            <img src="/assets/nit.svg" alt="nit-logo"></img>
-          </div>
-          <div className="col">
-            <img src="/assets/ciba.svg" alt="ciba-logo"></img>
-          </div>
-          <div className="col">
-            <img src="/assets/book.svg" alt="book-logo"></img>
-          </div>
-          <div className="row align-items-center">
-            <div className="col">
-              <img src="/assets/dlabs.svg" alt="dlabs-logo"></img>
+        <SupportImages>
+          {/* {suppoetImages.map((list, index
+          ) => (
+            <div>
+              <img key={index.id} src={`${list.toLowerCase()}.svg`} alt={list.alt}/>
             </div>
-            <div className="col">
-              <img src="/assets/six.svg" alt="six-logo"></img>
-            </div>
-            <div className="col">
-              <img src="/assets/vit.svg" alt="vit-logo"></img>
-            </div>
+          ))} */}
+          <div>
+            <img src="/assets/thub.svg" alt="thub-logo" />
           </div>
-        </div>
+          <div>
+            <img src="/assets/nit.svg" alt="nit-logo" />
+          </div>
+          <div>
+            <img src="/assets/KIIT_logo.png" style={{width:"52%"}} alt="kiit-logo" />
+          </div>
+          <div>
+            <img src="/assets/ciba.svg" alt="ciba-logo" />
+          </div>
+          <div>
+            <img src="/assets/book.svg" alt="book-logo" />
+          </div>
+          <div>
+            <img src="/assets/dlabs.svg" alt="dlabs-logo" />
+          </div>
+          <div>
+            <img src="/assets/six.svg" alt="six-logo" />
+          </div>
+          <div>
+            <img src="/assets/vit.svg" alt="vit-logo" />
+          </div>
+        </SupportImages>
       </div>
 
       {/* <div className="container">
@@ -253,3 +305,12 @@ export default Home;
 //   overflow-x: hidden;
 //   align-items: center;
 // `;
+
+const SupportImages = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-contents: center;
+  gap: 10px;
+  justify-items: center;
+`;

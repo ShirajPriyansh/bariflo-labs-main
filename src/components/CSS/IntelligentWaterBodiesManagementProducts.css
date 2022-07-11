@@ -2,7 +2,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
+    /* flex-direction: column; */
+    border: 1px solid red;
+}
+.heading{
+    margin: 2rem 0 0 0;
+    width: 100%;
+}
+.header-contain{
+    background-image: url('https://bariflolabs.com/wp-content/uploads/2020/05/lance-anderson-G2SDLsJp3rg-unsplash-scaled.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
 }
 .Intelligent-water-bodies-management-products-container{
     width: 500px;
@@ -11,7 +22,6 @@
     padding: 30px 1px;
     height: 660px;
     border-radius: 5px;
-    /* height : auto; */
 }
 .Intelligent-water-bodies-management-products-heading{
 
@@ -53,7 +63,6 @@
     font-family: Gotham-light;
     color: #fff;
     margin: 10px 10px;
-  /* font-size: 20px; */
 }
 
 @media (max-width : 570px){

@@ -30,7 +30,7 @@ function OurTeam() {
       </div>
 
       <div className="our_team_body">
-        {/* <section> */}
+        <section>
           {/* <div className="select_name_div">
           {
           OurTeamCardDetails.map((slide, index)=>{
@@ -62,7 +62,7 @@ function OurTeam() {
                   );
                 })}
           {/* </div> */}
-        {/* </section> */}
+        </section>
       </div>
     </>
   );
